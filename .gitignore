@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# console dump of gen_tables.py (regenerated on every run)
+results/gen_tables_out.txt
+
+# python_experiments: per-step console logs and --quick smoke-test outputs
+python_experiments/results/logs/
+python_experiments/results/*_quick*
+
+# editors / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store

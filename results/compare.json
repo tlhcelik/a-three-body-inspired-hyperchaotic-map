@@ -1,0 +1,114 @@
+{
+ "Logistic": {
+  "ref": "classical",
+  "dim": 1,
+  "param_range": [
+   0.0,
+   4.0
+  ],
+  "p_star": 4.0,
+  "lam_max": 0.6930811316488973,
+  "n_pos": 1,
+  "ks_bound": 0.6930811316488973,
+  "chaotic_ratio": 0.0851063829787234,
+  "pe6": 0.6291893320417882,
+  "sin_per_output": 0,
+  "us_per_output": 1.4848100000563136
+ },
+ "Sine": {
+  "ref": "classical",
+  "dim": 1,
+  "param_range": [
+   0.0,
+   1.0
+  ],
+  "p_star": 1.0,
+  "lam_max": 0.6886252162055924,
+  "n_pos": 1,
+  "ks_bound": 0.6886252162055924,
+  "chaotic_ratio": 0.12056737588652482,
+  "pe6": 0.6194766925012426,
+  "sin_per_output": 1,
+  "us_per_output": 2.093339999919408
+ },
+ "LSS (Zhou 2014)": {
+  "ref": "zhou2014new1d",
+  "dim": 1,
+  "param_range": [
+   0.0,
+   4.0
+  ],
+  "p_star": 3.8857142857142857,
+  "lam_max": 0.6930527068636456,
+  "n_pos": 1,
+  "ks_bound": 0.6930527068636456,
+  "chaotic_ratio": 1.0,
+  "pe6": 0.628343326054377,
+  "sin_per_output": 1,
+  "us_per_output": 3.6345100000289676
+ },
+ "2D-LASM (Hua 2016)": {
+  "ref": "hua2016lasm",
+  "dim": 2,
+  "param_range": [
+   0.0,
+   1.0
+  ],
+  "p_star": 0.9285714285714285,
+  "lam_max": 1.0636124767394024,
+  "n_pos": 2,
+  "ks_bound": 1.7513317094937597,
+  "chaotic_ratio": 0.524822695035461,
+  "pe6": 0.8701973615304892,
+  "sin_per_output": 1,
+  "us_per_output": 2.5832849999915197
+ },
+ "Henon": {
+  "ref": "henon1976",
+  "dim": 2,
+  "param_range": [
+   1.0,
+   1.4
+  ],
+  "p_star": 1.4,
+  "lam_max": 0.4177195219345581,
+  "n_pos": 1,
+  "ks_bound": 0.4177195219345581,
+  "chaotic_ratio": 0.723404255319149,
+  "pe6": 0.5553972958491716,
+  "sin_per_output": 0,
+  "us_per_output": 1.1419874999774038
+ },
+ "Gen. Henon 3D (Baier-Klein)": {
+  "ref": "baier1990maximum",
+  "dim": 3,
+  "param_range": [
+   1.0,
+   1.8
+  ],
+  "p_star": 1.76,
+  "lam_max": 0.2236881775573002,
+  "n_pos": 2,
+  "ks_bound": 0.41246628884059794,
+  "chaotic_ratio": 0.5035460992907801,
+  "pe6": 0.7224606514634682,
+  "sin_per_output": 0,
+  "us_per_output": 0.6073349999799877
+ },
+ "Proposed (N=3)": {
+  "ref": "this work",
+  "dim": 9,
+  "param_range": [
+   -6,
+   8
+  ],
+  "p_star": 0.97,
+  "lam_max": 4.773811928479274,
+  "n_pos": 7,
+  "ks_bound": 15.33706588023885,
+  "chaotic_ratio": 0.9219858156028369,
+  "pe6": 0.9789298083389801,
+  "sin_per_output": 1,
+  "us_per_output": 7.176803888897767
+ }
+}

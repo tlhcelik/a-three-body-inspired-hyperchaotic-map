@@ -1,0 +1,10 @@
+{
+  "group_order": 288,
+  "equivariance_max_abs_error": 2.2423596313103644e-10,
+  "a52_period2_attractors_found": 48,
+  "a52_symmetry_classes": 1,
+  "a52_class_sizes_found": [
+    48
+  ],
+  "a52_distinct_images_of_first_orbit": 48
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Three-body-inspired bounded hyperchaotic map: reproduction code",
+  "upload_type": "software",
+  "description": "<p>Python code that reproduces the analyses, tables and figures of the article <em>A Three-Body-Inspired Bounded Hyperchaotic Map: Mechanism, Scaling with the Number of Bodies, and Numerical Reliability</em>: the vectorised map and its closed-form Jacobian, Lyapunov spectra, coupling controls, scaling with the number of bodies, two-parameter diagrams, basins of attraction, comparison with established maps, numerical-reliability checks (60-digit reference, NIST SP 800-22 multi-sequence protocol) and the generation of the LaTeX tables and number macros.</p>",
+  "creators": [
+    {"name": "Çelik, Talha", "affiliation": "Selçuk University; HAVELSAN A.Ş."},
+    {"name": "Doğan, Nurettin", "affiliation": "Selçuk University"},
+    {"name": "Altun, Adem Alpaslan", "affiliation": "Selçuk University"}
+  ],
+  "keywords": ["chaotic map", "hyperchaos", "N-body problem", "Lyapunov spectrum", "mechanism of chaos", "finite precision"],
+  "access_right": "open",
+  "license": "Apache-2.0"
+}

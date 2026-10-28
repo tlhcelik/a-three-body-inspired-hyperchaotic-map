@@ -1,0 +1,36 @@
+{
+  "bins": 256,
+  "samples_per_ic": 200000,
+  "n_ic": 5,
+  "arcsine_reference_bits": 7.687064548843111,
+  "points": {
+    "-1.0": {
+      "shannon_bits_x1": 4.38069026154457,
+      "shannon_bits_pooled": 4.602416539075271,
+      "total_variation_to_uniform_x1": 0.8601375,
+      "total_variation_to_arcsine_x1": 0.6739002617291147,
+      "edge_mass_x1_abs_gt_0.9": 0.947885
+    },
+    "0.97": {
+      "shannon_bits_x1": 7.642874194339679,
+      "shannon_bits_pooled": 7.642861576936342,
+      "total_variation_to_uniform_x1": 0.23017624999999997,
+      "total_variation_to_arcsine_x1": 0.024475959542757855,
+      "edge_mass_x1_abs_gt_0.9": 0.300551
+    },
+    "2.0": {
+      "shannon_bits_x1": 7.66246263038548,
+      "shannon_bits_pooled": 7.661816717603073,
+      "total_variation_to_uniform_x1": 0.2224175,
+      "total_variation_to_arcsine_x1": 0.02476289525375374,
+      "edge_mass_x1_abs_gt_0.9": 0.291751
+    },
+    "6.0": {
+      "shannon_bits_x1": 7.881437225987916,
+      "shannon_bits_pooled": 7.88267988665881,
+      "total_variation_to_uniform_x1": 0.11504700000000001,
+      "total_variation_to_arcsine_x1": 0.17259051396182296,
+      "edge_mass_x1_abs_gt_0.9": 0.179022
+    }
+  }
+}

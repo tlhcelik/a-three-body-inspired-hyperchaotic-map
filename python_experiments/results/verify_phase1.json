@@ -1,0 +1,75 @@
+{
+  "trajectory_equivalence_a097": {
+    "max_diff_first_8_vec": 0.0,
+    "max_diff_first_8_batch": 0.0,
+    "first_step_with_nonzero_diff_vec": null,
+    "first_step_with_nonzero_diff_batch": null
+  },
+  "trajectory_equivalence_a52": {
+    "max_diff_first_8_vec": 0.0,
+    "max_diff_first_8_batch": 0.0,
+    "first_step_with_nonzero_diff_vec": null,
+    "first_step_with_nonzero_diff_batch": null
+  },
+  "two_traj_reference_vs_batch_500_1500": {
+    "reference": 4.695250532100027,
+    "batch": 4.695250532100027,
+    "seconds_reference": 0.16516319999936968,
+    "seconds_batch": 0.15397479996317998
+  },
+  "timing_batch100_per_iter_seconds": 0.00010322119999909773,
+  "jacobian_accuracy_a097": {
+    "h=1e-05": {
+      "median_rel_err": 1.9666348255192117e-06,
+      "p90_rel_err": 0.0013473431511833798,
+      "max_rel_err": 1.3146040312537617
+    },
+    "h=1e-06": {
+      "median_rel_err": 1.964007108233443e-08,
+      "p90_rel_err": 1.3479663624014232e-05,
+      "max_rel_err": 1.016725595502185
+    },
+    "h=1e-07": {
+      "median_rel_err": 1.8019195596886044e-09,
+      "p90_rel_err": 1.3528652834455198e-07,
+      "max_rel_err": 0.9875914407961753
+    },
+    "spectral_radius_on_attractor": {
+      "median": 164.68442560164107,
+      "p90": 3396.4510712969654,
+      "max": 39944469.094295494
+    }
+  },
+  "spectrum_a097_500_3000": {
+    "analytic": [
+      4.7251967234059835,
+      3.4242882684521283,
+      2.626048697894242,
+      2.015837622671659,
+      1.4443402747507095,
+      0.872648504401398,
+      0.20397197696988234,
+      -0.4760470258086619,
+      -1.3006002979342657
+    ],
+    "numerical_h1e-6": [
+      4.708698578054907,
+      3.417936275204058,
+      2.6272724023374683,
+      2.0151891581876433,
+      1.4459199236188525,
+      0.8747754926108439,
+      0.20233339263236266,
+      -0.4784498470081187,
+      -1.3020063606229872
+    ],
+    "kaplan_yorke_analytic": 9.0,
+    "sum_analytic": 13.535684744803074
+  },
+  "ablation_sanity_lambda_a097": {
+    "V0_full": 4.695250532100027,
+    "V3_no_phi_no_force": 0.2690408082021118,
+    "V4_pure_1d": -0.6401971966357678
+  },
+  "clamp_count_total": 0
+}

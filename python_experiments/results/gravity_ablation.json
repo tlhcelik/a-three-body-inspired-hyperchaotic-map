@@ -1,0 +1,241 @@
+{
+  "threshold": 0.05742571183730796,
+  "divergence_bound": 100000000.0,
+  "variants": {
+    "V0_full": {
+      "kwargs": {},
+      "lambda_a097": {
+        "n": 20,
+        "mean": 4.766663526763482,
+        "sd": 0.03725144057590064,
+        "median": 4.769169778653282,
+        "q1": 4.749187416580213,
+        "q3": 4.792931795570028,
+        "min": 4.680012777417974,
+        "max": 4.826374779455001
+      },
+      "bounded_fraction_a097": 1.0,
+      "bounded_fraction_scan": 1.0,
+      "bounded_a_count": 141,
+      "chaotic_ratio": 0.9290780141843972,
+      "chaotic_count": 131,
+      "chaotic_ratio_wilson95": [
+        0.8743715687731851,
+        0.9610237872571267
+      ],
+      "lambda_median_at_a097_scan": 4.775596364526631,
+      "zero_one_K_median": 0.9981143114284003,
+      "permutation_entropy_m7": 0.9787508869565301
+    },
+    "V1_no_phi": {
+      "kwargs": {
+        "use_phi": false
+      },
+      "lambda_a097": {
+        "n": 20,
+        "mean": 3.5650376493454816,
+        "sd": 0.027024927938634653,
+        "median": 3.552121516037249,
+        "q1": 3.5462648343715637,
+        "q3": 3.5851497750825647,
+        "min": 3.5350572389610178,
+        "max": 3.6278318228779107
+      },
+      "bounded_fraction_a097": 1.0,
+      "bounded_fraction_scan": 1.0,
+      "bounded_a_count": 141,
+      "chaotic_ratio": 0.5319148936170213,
+      "chaotic_count": 75,
+      "chaotic_ratio_wilson95": [
+        0.4498010044596747,
+        0.612335840203737
+      ],
+      "lambda_median_at_a097_scan": 3.4480901318767914,
+      "zero_one_K_median": 0.9974978845515061,
+      "permutation_entropy_m7": 0.969466916740373
+    },
+    "V2_no_force": {
+      "kwargs": {
+        "use_force": false
+      },
+      "lambda_a097": {
+        "n": 20,
+        "mean": -0.00914138607535386,
+        "sd": 0.0025670368587061127,
+        "median": -0.009938916285424718,
+        "q1": -0.0100044678561463,
+        "q3": -0.009900558228415311,
+        "min": -0.010182077924175357,
+        "max": -0.0015932339604572234
+      },
+      "bounded_fraction_a097": 1.0,
+      "bounded_fraction_scan": 1.0,
+      "bounded_a_count": 141,
+      "chaotic_ratio": 0.0425531914893617,
+      "chaotic_count": 6,
+      "chaotic_ratio_wilson95": [
+        0.01964589254224454,
+        0.08972600061552229
+      ],
+      "lambda_median_at_a097_scan": -0.009956818967209378,
+      "zero_one_K_median": -0.0020894151565914757,
+      "permutation_entropy_m7": 0.08130604820286014
+    },
+    "V3_no_phi_force": {
+      "kwargs": {
+        "use_phi": false,
+        "use_force": false
+      },
+      "lambda_a097": {
+        "n": 20,
+        "mean": 0.2752203790901497,
+        "sd": 0.0024336755866558382,
+        "median": 0.2755098612052782,
+        "q1": 0.2732954810235312,
+        "q3": 0.2761327502238728,
+        "min": 0.270996988009189,
+        "max": 0.2799376430770012
+      },
+      "bounded_fraction_a097": 1.0,
+      "bounded_fraction_scan": 1.0,
+      "bounded_a_count": 141,
+      "chaotic_ratio": 0.1773049645390071,
+      "chaotic_count": 25,
+      "chaotic_ratio_wilson95": [
+        0.12307779859865453,
+        0.24864966091573915
+      ],
+      "lambda_median_at_a097_scan": -0.3231327609864739,
+      "zero_one_K_median": 0.9978104901213457,
+      "permutation_entropy_m7": 0.352984137108546
+    },
+    "V4_pure_1d": {
+      "kwargs": {
+        "use_phi": false,
+        "use_force": false,
+        "use_boundary": false
+      },
+      "lambda_a097": {
+        "n": 20,
+        "mean": -0.6401971959183118,
+        "sd": 8.964422157719708e-09,
+        "median": -0.6401971939883913,
+        "q1": -0.6401972041472708,
+        "q3": -0.6401971881344904,
+        "min": -0.6401972144194625,
+        "max": -0.6401971840616925
+      },
+      "bounded_fraction_a097": 1.0,
+      "bounded_fraction_scan": 1.0,
+      "bounded_a_count": 141,
+      "chaotic_ratio": 0.07092198581560284,
+      "chaotic_count": 10,
+      "chaotic_ratio_wilson95": [
+        0.03897621274287337,
+        0.12562843122681494
+      ],
+      "lambda_median_at_a097_scan": -0.6026633703290065,
+      "zero_one_K_median": -0.0004748172408341905,
+      "permutation_entropy_m7": -0.0
+    },
+    "F_sawtooth": {
+      "kwargs": {
+        "fold": "sawtooth"
+      },
+      "lambda_a097": {
+        "n": 20,
+        "mean": 2.2384466216058145,
+        "sd": 0.05691232624318043,
+        "median": 2.229680907725899,
+        "q1": 2.203108384709851,
+        "q3": 2.255521532474839,
+        "min": 2.1296803324747504,
+        "max": 2.362441445514412
+      },
+      "bounded_fraction_a097": 1.0,
+      "bounded_fraction_scan": 1.0,
+      "bounded_a_count": 141,
+      "chaotic_ratio": 1.0,
+      "chaotic_count": 141,
+      "chaotic_ratio_wilson95": [
+        0.9734772330601154,
+        1.0
+      ],
+      "lambda_median_at_a097_scan": 2.131221328286128,
+      "zero_one_K_median": 0.9980471477239655,
+      "permutation_entropy_m7": 0.8667016928490189
+    },
+    "F_triangle": {
+      "kwargs": {
+        "fold": "triangle"
+      },
+      "lambda_a097": {
+        "n": 20,
+        "mean": 4.622753877901049,
+        "sd": 0.024173010747628038,
+        "median": 4.626410693881711,
+        "q1": 4.606596462270409,
+        "q3": 4.64433764414148,
+        "min": 4.575009185563658,
+        "max": 4.65937123833834
+      },
+      "bounded_fraction_a097": 1.0,
+      "bounded_fraction_scan": 1.0,
+      "bounded_a_count": 141,
+      "chaotic_ratio": 1.0,
+      "chaotic_count": 141,
+      "chaotic_ratio_wilson95": [
+        0.9734772330601154,
+        1.0
+      ],
+      "lambda_median_at_a097_scan": 4.611797850014803,
+      "zero_one_K_median": 0.9983659017098224,
+      "permutation_entropy_m7": 0.9671046319081172
+    },
+    "F_tanh": {
+      "kwargs": {
+        "fold": "tanh"
+      },
+      "lambda_a097": {
+        "n": 20,
+        "mean": -0.7018956231857796,
+        "sd": 0.4182430756571449,
+        "median": -0.46655521409049827,
+        "q1": -0.7023693899334998,
+        "q3": -0.46641745029751874,
+        "min": -1.4081276904305495,
+        "max": -0.46625735090762016
+      },
+      "bounded_fraction_a097": 1.0,
+      "bounded_fraction_scan": 1.0,
+      "bounded_a_count": 141,
+      "chaotic_ratio": 0.3262411347517731,
+      "chaotic_count": 46,
+      "chaotic_ratio_wilson95": [
+        0.25435688113492116,
+        0.40734252014206007
+      ],
+      "lambda_median_at_a097_scan": -0.9908489632016706,
+      "zero_one_K_median": -0.0020894151567684427,
+      "permutation_entropy_m7": 0.08130604820286014
+    },
+    "F_none": {
+      "kwargs": {
+        "fold": "none"
+      },
+      "lambda_a097": {
+        "n": 0
+      },
+      "bounded_fraction_a097": 0.0,
+      "bounded_fraction_scan": 0.03546099290780142,
+      "bounded_a_count": 0,
+      "chaotic_ratio": 0.0,
+      "chaotic_count": 0,
+      "chaotic_ratio_wilson95": [
+        0.0,
+        0.026522766939884673
+      ],
+      "lambda_median_at_a097_scan": null
+    }
+  }
+}
