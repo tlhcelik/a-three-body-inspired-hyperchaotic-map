@@ -1,5 +1,7 @@
 # Three-body-inspired bounded hyperchaotic map — reproduction code
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23806191.svg)](https://doi.org/10.5281/zenodo.23806191)
+
 Code accompanying *"A Three-Body-Inspired Bounded Hyperchaotic Map: Mechanism, Scaling with the Number of Bodies, and Numerical Reliability"*.
 
 ## Requirements
@@ -100,7 +102,7 @@ Defaults: N = 3, m = 1, G = 1, ε = 0.1, R² = 2; reference parameters a = 0.97 
 
 ## Citation
 
-If you use this code, please cite the article (see `CITATION.cff`). The archived version of this repository will have a Zenodo DOI, which will be added here after the first release.
+If you use this code, please cite the article and the archived code. The citation data are in `CITATION.cff`. The code is archived on Zenodo: version 0.1.0, which was used in the article, has the DOI [10.5281/zenodo.23806192](https://doi.org/10.5281/zenodo.23806192), and [10.5281/zenodo.23806191](https://doi.org/10.5281/zenodo.23806191) always resolves to the latest version.
 
 ## License
 
