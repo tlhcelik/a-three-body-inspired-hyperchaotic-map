@@ -50,7 +50,7 @@ TRPAIRS = [
     (r"\shortstack{equal rms\\of $F$}", r"\shortstack{e\c{s}it rms\\($F$)}"),
     (r"\shortstack{equal median\\of $|F|$}", r"\shortstack{e\c{s}it medyan\\($|F|$)}"),
     (r"\shortstack{equal median\\of $|D|$}", r"\shortstack{e\c{s}it medyan\\($|D|$)}"),
-    (r"\shortstack{best hyperchaotic\\strength ($s/s_0$)}", r"\shortstack{en iyi hiperkaotik\\g\"u\c{c} ($s/s_0$)}"),
+    (r"\shortstack{best strongly\\hyperchaotic\\strength ($s/s_0$)}", r"\shortstack{en iyi g\"u\c{c}l\"u\\hiperkaotik\\g\"u\c{c} ($s/s_0$)}"),
     (r"\shortstack{largest ratio\\at any strength}", r"\shortstack{en b\"uy\"uk oran\\(herhangi g\"u\c{c})}"),
     (r"median $|D|$", r"medyan $|D|$"), (r"Folding", r"Katlama"), (r"& Coupling \\", r"& Ba\u{g}la\c{s}{\i}m terimi \\"),
     (r"Coupling &", r"Kuplaj &"),
@@ -198,7 +198,7 @@ def cell(r, star=False):
 
 L = [r"\begin{tabular}{lccccc}", r"\toprule",
      r"Coupling & \shortstack{equal rms\\of $F$} & \shortstack{equal median\\of $|F|$} & \shortstack{equal median\\of $|D|$} & "
-     r"\shortstack{best hyperchaotic\\strength ($s/s_0$)} & \shortstack{largest ratio\\at any strength} \\", r"\midrule"]
+     r"\shortstack{best strongly\\hyperchaotic\\strength ($s/s_0$)} & \shortstack{largest ratio\\at any strength} \\", r"\midrule"]
 for k, lab in rows:
     c = [cell(ma(cr, k), star=(cr == "medD" and k in MA["medD"] and not MA["medD"][k].get("matched", True))) for cr in ("rms", "medF", "medD")]
     if k == "none":
@@ -213,7 +213,17 @@ L += [r"\bottomrule", r"\end{tabular}"]
 emit("tab_mechanism", "\n".join(L) + "\n")
 
 # ---------------------------------------------------------------- decomposition table (median-|D| matched)
-drows = [("newton", r"Newtonian, $p=3$ (proposed)"), ("repulsive", r"Newtonian, repulsive"), ("p=2.5", r"power law, $p=2.5$"),
+def s_over_s0(k):
+    """Median-|D| matched strength relative to the median-|F| matched value s0 (mean over the draws of a family)."""
+    if k == "newton":
+        return 1.0
+    d, f = MA["medD"][k], MA["medF"][k]
+    if "reps" in d:
+        return float(np.mean([a["scale"] / b["scale"] for a, b in zip(d["reps"], f["reps"])]))
+    return d["scale"] / f["scale"]
+
+
+drows =[("newton", r"Newtonian, $p=3$ (proposed)"), ("repulsive", r"Newtonian, repulsive"), ("p=2.5", r"power law, $p=2.5$"),
          ("p=3.5", r"power law, $p=3.5$"), ("p=2", r"power law, $p=2$"), ("p=1.5", r"power law, $p=1.5$"),
          ("p=4", r"power law, $p=4$"), ("p=5", r"power law, $p=5$"),
          ("linear", r"linear diffusive, $p=0$"), ("random_linear", r"random linear$^{\dagger}$"),
@@ -222,8 +232,8 @@ L = [r"\begin{tabular}{lccccc}", r"\toprule",
      r"Coupling & $s/s_0$ & median $|D|$ & $\sum_i\lambda_i$ & Folding & Coupling \\", r"\midrule"]
 for k, lab in drows:
     r = ma("medD", k)
-    s_rel = r.get("scale", 1.0)
-    L.append(f"{lab} & ${s_rel:.2f}$ & ${r['D_median']:.2f}$ & ${r['sum']:.2f}$ & ${r['fold_term']:.2f}$ & ${r['coupling_term']:.2f}$ \\\\")
+    s_cell = "---" if k == "none" else f"${s_over_s0(k):.2f}$"
+    L.append(f"{lab} & {s_cell} & ${r['D_median']:.2f}$ & ${r['sum']:.2f}$ & ${r['fold_term']:.2f}$ & ${r['coupling_term']:.2f}$ \\\\")
 L += [r"\bottomrule", r"\end{tabular}"]
 emit("tab_decomposition", "\n".join(L) + "\n")
 

@@ -73,7 +73,7 @@ def main():
             res.setdefault(kind, []).append(out)
             b = out["best_ratio"]; h = out.get("best_hyper")
             print(f"{kind:14s} seed {seed}: best ratio {b['chaotic_ratio']:.2f} (npos {b['n_pos']:.1f}, "
-                  f"s/s0 {b['s']/out['s0']:.2f}); best hyperchaotic "
+                  f"s/s0 {b['s']/out['s0']:.2f}); best strongly hyperchaotic "
                   + (f"ratio {h['chaotic_ratio']:.2f} (npos {h['n_pos']:.1f}, s/s0 {h['s']/out['s0']:.2f})" if h else "none")
                   + f"  [{dt:.0f}s, total {time.time()-t0:.0f}s]", flush=True)
     json.dump(res, open("results/strength.json", "w"), indent=1)
