@@ -3,7 +3,7 @@ message: "If you use this code, please cite the article below."
 type: software
 title: "Three-body-inspired bounded hyperchaotic map: reproduction code"
 version: "0.1.1"
-doi: "10.5281/zenodo.23806191"
+doi: "10.5281/zenodo.24016529"
 date-released: "2026-11-06"
 repository-code: "https://github.com/tlhcelik/a-three-body-inspired-hyperchaotic-map"
 license: Apache-2.0
@@ -14,6 +14,9 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.23806192"
     description: "Version 0.1.0"
+  - type: doi
+    value: "10.5281/zenodo.24016529"
+    description: "Version 0.1.1, used in the article"
 authors:
   - family-names: "Çelik"
     given-names: "Talha"

@@ -102,7 +102,7 @@ Defaults: N = 3, m = 1, G = 1, ε = 0.1, R² = 2; reference parameters a = 0.97 
 
 ## Citation
 
-If you use this code, please cite the article and the archived code. The citation data are in `CITATION.cff`. The code is archived on Zenodo: [10.5281/zenodo.23806191](https://doi.org/10.5281/zenodo.23806191) always resolves to the latest version. The article uses version 0.1.1. Version 0.1.0 has the DOI [10.5281/zenodo.23806192](https://doi.org/10.5281/zenodo.23806192).
+If you use this code, please cite the article and the archived code. The citation data are in `CITATION.cff`. The code is archived on Zenodo: [10.5281/zenodo.23806191](https://doi.org/10.5281/zenodo.23806191) always resolves to the latest version. Version 0.1.1, which was used in the article, has the DOI [10.5281/zenodo.24016529](https://doi.org/10.5281/zenodo.24016529). Version 0.1.0 has the DOI [10.5281/zenodo.23806192](https://doi.org/10.5281/zenodo.23806192).
 
 ## License
 
